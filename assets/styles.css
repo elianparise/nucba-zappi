@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --background-color: #131415;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+/* parte Elian Header Start */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  padding: 6px 1.5em 0 1em;
+}
+
+.header-icon {
+  height: 79px;
+  width: 76px;
+  left: 65px;
+  top: 31px;
+  border-radius: 0px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 5em;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 300;
+  font-size: small;
+  padding: 0;
+  width: 500px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav ul li:first-of-type {
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav ul li:first-of-type a {
+  text-decoration: none;
+  color: white;
+}
+
+.cart {
+  display: flex;
+  cursor: pointer;
+}
+
+#cart-badge {
+  position: absolute;
+  font-size: 10px;
+  background-color: red;
+  padding: 2px;
+  margin-left: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+/* parte Elian end */
+
+
+/*  INICIO HERO, PARTE ULISES */
+
+.hero {
+  width: 80vw;
+  height: 300px;
+  color: white;
+  display: flex;
+}
+
+.txt-hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 66px;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero h2 {
+  font-size: 60px;
+
+}
+
+.hero .txt p {
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.txt {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.bttn-hero {
+  background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+  box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+  flex-grow: 1;
+}
+
+.img-hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.pizzas {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+
+.pizza1 {
+  position: absolute;
+  height: 85%;
+  width: 80%;
+  left: 35%;
+  bottom: 20%;
+  z-index: 999;
+}
+
+.pizza34 {
+  transform: scale(0.6);
+  height: 100%;
+  width: 75%;
+}
+
+/* FIN HERO, PARTE ULISES */
+
+/* parte elian footer start */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  font-size: 17px;
+  font-weight: lighter;
+  gap: 70px;
+  padding: 50px 0;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer strong {
+  color: white;
+}
+
+/* Main  */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* LOS MAS POPULARES */
+
+#Populares {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 70px 20px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+#Populares h2 {
+  padding: 60px 0 0 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 131.02%;
+  width: 100%;
+  top: 1066px;
+  color: white;
+  margin-right: -5rem;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+.content-populares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #252525;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  border-radius: 15px;
+  height: 213px;
+  width: 282px;
+  left: 132px;
+  top: 1120px;
+}
+
+.card-populares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 282px;
+  height: 213px;
+  background: #252525;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  border-radius: 15px;
+}
+
+.card-populares img {
+  height: 97px;
+  width: 237px;
+  left: 155px;
+  top: 1136px;
+  border-radius: 16px;
+  background: url(pexels-eneida-nieves-905847.jpg);
+  mix-blend-mode: normal;
+  border-radius: 16px;
+}
+
+.card-info {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-info-populares1 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--blanco);
+  line-height: 131.02%;
+  text-align: left;
+}
+
+.card-info-populares1 p {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  line-height: 131.02%;
+  text-align: left;
+}
+
+.card-info-populares2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: var(--blanco);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.card-info-populares2 p {
+  color: white;
+}
+
+.card-info-populares3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  font-weight: 700;
+  font-size: 19px;
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bottom-add2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 29px;
+  border-radius: 17.5px;
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--blanco);
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.contenedor-menu {
+  display: flex;
+  justify-content: center;
+}
+
+/* Inicio de categorias, parte de Rubén  */
+
+#categories {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px 10px;
+  color: white;
+  /* padding-left: 50px; */
+  width: 100%;
+}
+
+.categories-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.card-categories {
+  background: #252525;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  gap: 5px;
+  width: 150px;
+  text-align: center;
+}
+
+.card-categories p {
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.card-categories span {
+  background: linear-gradient(to right, #ffa100, #ff005c);
+  border-radius: 15px;
+  content: "";
+  height: 4px;
+  width: 30px;
+  bottom: 0;
+}
+
+.card-categories .imgs {
+  display: flex;
+}
+
+.real-img {
+  z-index: 2;
+}
+
+.pizza-blur {
+  background: url(./images/categories-icons/image\ 34.png) no-repeat center/cover;
+  width: 71px;
+  height: 71px;
+  position: absolute;
+  padding-left: 8px;
+  padding-top: 5px;
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+.burguer-blur {
+  background: url(./images/categories-icons/burger\ 1.png) no-repeat center/cover;
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  padding-left: 2px;
+  padding-top: 2px;
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+.fries-blur {
+  background: url(./images/categories-icons/fries\ 2.png) no-repeat center/cover;
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  padding-left: 2px;
+  padding-top: 3px;
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+.individuals-blur {
+  background: url(./images/categories-icons/pizza\ 2.png) no-repeat center/cover;
+  width: 85px;
+  height: 86px;
+  position: absolute;
+  padding-left: 3px;
+  padding-top: 2px;
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+.wraps-blur {
+  background: url(./images/categories-icons/buritto\ 1.png) no-repeat center/cover;
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  padding-left: 2px;
+  padding-top: 2px;
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+.mex-food-blur {
+  background: url(./images/categories-icons/taco\ 1.png) no-repeat center/cover;
+  width: 85px;
+  height: 86px;
+  position: absolute;
+  padding-left: 2px;
+  padding-top: 3px;
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+.shakes-blur {
+  background: url(./images/categories-icons/float\ 1.png) no-repeat center/cover;
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  padding-left: 2px;
+  padding-top: 3px;
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+/* Fin de categorias, parte de Rubén */
