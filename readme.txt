@@ -1,1 +1,0 @@
-Proyecto hecho con amor ❤ por el grupo de: Ruben Herrera, Elian Parise, Facundo Costas, Ulises Gunetti y Agustin Mancini.
