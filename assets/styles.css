@@ -88,7 +88,6 @@ nav ul li:first-of-type a {
 
 /* parte Elian end */
 
-
 /*  INICIO HERO, PARTE ULISES */
 
 .hero {
@@ -114,7 +113,6 @@ nav ul li:first-of-type a {
 
 .hero h2 {
   font-size: 60px;
-
 }
 
 .hero .txt p {
@@ -131,7 +129,7 @@ nav ul li:first-of-type a {
 }
 
 .bttn-hero {
-  background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
   box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
   color: white;
   width: 150px;
@@ -362,6 +360,7 @@ main {
   color: var(--blanco);
   letter-spacing: 0.5px;
   color: white;
+  cursor: pointer;
 }
 
 .contenedor-menu {
@@ -395,7 +394,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  cursor: pointer;
   justify-content: center;
   padding: 15px 20px;
   border-radius: 15px;
@@ -403,6 +402,11 @@ main {
   gap: 5px;
   width: 150px;
   text-align: center;
+  transition: transform 0.6s;
+}
+
+.card-categories:hover {
+  transform: scale(1.1);
 }
 
 .card-categories p {
@@ -429,7 +433,8 @@ main {
 }
 
 .pizza-blur {
-  background: url(./images/categories-icons/image\ 34.png) no-repeat center/cover;
+  background: url(./images/categories-icons/image\ 34.png) no-repeat
+    center/cover;
   width: 71px;
   height: 71px;
   position: absolute;
@@ -440,7 +445,8 @@ main {
 }
 
 .burguer-blur {
-  background: url(./images/categories-icons/burger\ 1.png) no-repeat center/cover;
+  background: url(./images/categories-icons/burger\ 1.png) no-repeat
+    center/cover;
   width: 85px;
   height: 85px;
   position: absolute;
@@ -473,7 +479,8 @@ main {
 }
 
 .wraps-blur {
-  background: url(./images/categories-icons/buritto\ 1.png) no-repeat center/cover;
+  background: url(./images/categories-icons/buritto\ 1.png) no-repeat
+    center/cover;
   width: 86px;
   height: 86px;
   position: absolute;
@@ -506,3 +513,44 @@ main {
 }
 
 /* Fin de categorias, parte de Rubén */
+
+/* hoy te recomendamos  */
+
+#hoy {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 70px 20px;
+  color: white;
+}
+.hoy-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hoy-card {
+  background: #252525;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+}
+
+.card-info span {
+  background: linear-gradient(to right, #ffa100, #ff005c);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#hoy h2 {
+  font-weight: 500;
+  color: white;
+}
+/* Animaciones parte de Agustin */
